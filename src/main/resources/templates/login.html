@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <script src="/jquery.js"></script>
+    <script>
+            function login() {
+                var  userN=document.getElementById("userN");
+                var pw= document.getElementById("pas");
+                if(userN !=="yan" || pw !=="123"){
+                    alert("登录失败");
+                }else {
+
+                    alert("登录成功");
+                    
+                }
+            }
+
+    </script>
+</head>
+<body>
+
+<form action="/index" method="post">
+    <div id="userN">
+        账号：<input type="text" value="" name="userName">
+    </div>
+    <div id="pas">
+        密码：<input type="password" value="" name="password">
+    </div>
+    <button type="submit" >登录</button>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>

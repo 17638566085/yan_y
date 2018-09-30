@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_yong?&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+  thymeleaf:
+    prefix: classpath:/templates
+
+mybatis:
+  type-aliases-package: cn.yanyong.testboot.entity
+  mapper-locations: classpath:mappers/*.xml
